@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 04 - Homework</title>
+	
+</head>
+<body>
+	
+	<script>
+		;(function(){
+			"use strict";
+
+
+		function map(fn, array) {
+ 			var newarray = [];
+ 			for(var key = 0; key < array.length; key++) {
+  			newarray[key] = fn(array[key]);
+ 			}
+ 			return newarray;
+		}
+
+		function square(x) {
+			return x * x;
+		}	
+	
+	var array = [1, 2, 3, 4, 5];
+	console.log(map(square, array));
+	console.log(array);
+	
+	})();
+	</script>
+
+	
+</body>
+</html>
